@@ -1,2 +1,0 @@
-# Material-Template
-Material Template

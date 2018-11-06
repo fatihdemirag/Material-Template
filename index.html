@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Material Template - Fatih Demirağ</title>
+    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="images/icon/icon.png"/>
+
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/materialize.min.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Styles End -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.dropdown-trigger').dropdown();
+            $('.collapsible').collapsible();
+        });
+    </script>
+    <!-- Script End -->
+</head>
+<body style="background-color:#ededed">
+<div id="main">
+    <div  id="toolbar">
+        <div data-target="slide-out" class="sidenav-trigger show-on-medium" style="float:left"><label id="hamburgerMenu">&#9776;</label></div>
+    </div>
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view center-align">
+                <a class="sidenav-close">
+                    <img  class="rounded-circle modal-trigger userPhoto" href="#userPhoto"
+                          width="80" src="images/users/user-icon.png">
+                    <label class="black-text name">Fatih Demirağ</label>
+                </a>
+                <a href="#">
+                    <label class="black-text name" style="cursor: pointer">Logout</label>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#" class="sidenav-close"><img src="images/icon/nav/home-icon.png" class="navIcon"/>Home</a>
+        </li>
+        <li><a href="#" class="sidenav-close"><img src="images/icon/nav/appointments-icon.png" class="navIcon"/>Menu 1</a>
+        </li>
+        <li><a href="#" class="sidenav-close"><img src="images/icon/nav/customers-icon.png" class="navIcon"/>Menu 2</a>
+        </li>
+        <li><a href="#" class="sidenav-close"><img src="images/icon/nav/employees-icon.png" class="navIcon"/>Menu 3</a>
+        </li>
+        <li data-toggle="collapse" data-target="#reports" >
+            <a><img src="images/icon/nav/reports-icon.png" class="navIcon"/>Collapsible<label style="cursor:pointer;font-size: 16px"><i class="fa fa-caret-down" style="margin-left: 100px;"></i></label></a>
+            <ul id="reports" class="collapse">
+                <li><a href="#" ><i class="fa fa-caret-right" style="margin-right: 20px"></i>Menu 4</a></li>
+                <li><a href="#" ><i class="fa fa-caret-right" style="margin-right: 20px"></i>Menu 5</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="sidenav-close"><img src="images/icon/nav/settings-icon.png" class="navIcon"/>Menu 6</a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        <li><a class="subheader" style="font-size: 20px;font-weight: bold;text-align: center"><img class="rounded-circle" src="images/icon/icon.png" width="70" style="margin-right: 10px"></a></li>
+    </ul>
+</div>
+</body>
+</html>

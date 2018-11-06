@@ -1,0 +1,155 @@
+html,body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+.sidenav {
+    margin-left: 300px !important;
+    overflow: auto;
+}
+
+.sidenav li a {
+    text-decoration: none !important;
+    font-size: 15px !important;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#nav a:hover {
+    color: #818181;
+}
+
+.sidenav ul li a img {
+    margin-right: 20px !important;
+
+}
+
+.navIcon {
+    width: 24px;
+    margin-right: 20px;
+}
+
+#main {
+    transition: margin-left 1s;
+    margin-left: 280px;
+    z-index: 1;
+}
+#toolbar
+{
+    background-color: #fff;
+    box-shadow: 10px 2px 5px 0px rgba(0, 0, 0, 0.10);
+    padding: 10px 10px 10px 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    height: 70px;
+}
+#content
+{
+    margin: 10px;
+}
+#hamburgerMenu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+
+.numbers {
+    font-size: 45px;
+}
+
+td.fc-day.fc-past {
+    background-color: #EEEEEE;
+}
+.card .card-header {
+    background-color: white;
+}
+.card
+{
+    box-shadow: 0 0 0 0!important;
+}
+.datepicker-modal
+{
+    height: 390px;
+    overflow: hidden;
+}
+.userPhoto:hover
+{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.pagination {
+    display: inline-block;
+    margin: 5px;
+}
+.pagination>li>a, .pagination>li>span { border-radius: 50% !important;margin: 0 5px;}
+.pagination li.active{background-color: transparent;}
+.pagination a {
+    transition: background-color .3s;
+}
+@media screen and (min-width: 200px) and (max-width: 700px) {
+    #nav {
+        padding-top: 15px;
+    }
+
+    #nav a {
+        font-size: 16px;
+    }
+
+    .pager input {
+        margin-top: 10px;
+    }
+
+    #hamburgerMenu {
+        display: block;
+    }
+
+    .datepicker-modal
+    {
+        height: 510px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 499px) {
+    #nav{width: 0}
+    #main{margin-left: 0}
+
+    .datepicker-modal
+    {
+        height: 510px;
+    }
+
+}
+
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+    #nav{width: 0}
+    #main{margin-left: 0}
+
+    #hamburgerMenu {
+        display: block;
+    }
+    .sidenav {
+        left: -300px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav {
+        left: -300px !important;
+    }
+    .datepicker-modal
+    {
+        height: 510px;
+    }
+
+}
